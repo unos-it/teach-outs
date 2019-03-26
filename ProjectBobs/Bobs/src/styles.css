@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* resetting default rounded behavior on containers */
+.rounded {border-radius:.75rem!important;}
+
+/* This is built for the demonstration to seat the footer */
+.footer {
+  bottom: 0;
+}
+
+/* navbar - hamburger - toggle control with animation */
+.navbar-dark .navbar-toggler{border:none; cursor:pointer; border-color:transparent;}
+.navbar-toggler:focus {outline: 0;}
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+.navbar-toggler:hover{background: transparent !important;}
+.navbar-toggler .icon-bar{width: 22px;transition: all 0.2s;}
+.navbar-toggler .top-bar{transform: rotate(45deg);transform-origin: 10% 10%;}
+.navbar-toggler .middle-bar{opacity: 0;}
+.navbar-toggler .bottom-bar{transform: rotate(-45deg);transform-origin: 10% 90%;}
+.navbar-toggler.collapsed .top-bar{transform: rotate(0);}
+.navbar-toggler.collapsed .middle-bar{opacity: 1;}
+.navbar-toggler.collapsed .bottom-bar{transform: rotate(0);}
+
+/* resetting navbar padding to adjust for brand */
+.navbar{padding: 0;}
+
+/* add padding back to only navbar links */
+.navbar-nav > .nav-link {
+  padding: .5rem 1rem;
+}
+
+/* resetting default anchor color on navbar links */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1.0);
+}
+
+/* setting active states on navbar links */
+.navbar-dark .navbar-nav > a.active {
+  background-color: rgba(168,36,19,1.0); /* background:#a82413;*/
+}
