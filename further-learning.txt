@@ -1,0 +1,13 @@
+LEARN FURTHERLY
+
+Docs:
+https://angular.io/docs
+
+Tutorial: 
+https://angular.io/tutorial
+
+Our uWiki:
+https://uwiki.unos.org/index.php?title=Angular
+
+Asynchronous Programming:
+https://egghead.io/courses/asynchronous-programming-the-end-of-the-loop
