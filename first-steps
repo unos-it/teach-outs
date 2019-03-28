@@ -1,0 +1,11 @@
+VISUAL STUDIO CODE:
+https://code.visualstudio.com/download
+
+NODEJS:
+https://nodejs.org/dist/v10.15.3/node-v10.15.3-x64.msi
+
+YARN:
+https://yarnpkg.com/latest.msi
+
+OPEN COMMAND LINE
+yarn global add @angular/cli
