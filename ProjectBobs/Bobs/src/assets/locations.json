@@ -1,0 +1,34 @@
+{
+  "Value": [
+    {
+      "id": 1,
+      "name": "Location One",
+      "street": "One Street",
+      "city": "One City",
+      "state": "VA",
+      "zip": "99999"
+    },
+    {
+      "id": 2,
+      "name": "Location Two",
+      "street": "Two Street",
+      "city": "Two City",
+      "state": "VA",
+      "zip": "99999"
+    },
+    {
+      "id": 3,
+      "name": "Location Three",
+      "street": "Three Street",
+      "city": "Three City",
+      "state": "VA",
+      "zip": "99999"
+    }
+  ],
+  "ValidationResults": [
+    {
+      "Identifiers": [],
+      "Messages": []
+    }
+  ]
+}

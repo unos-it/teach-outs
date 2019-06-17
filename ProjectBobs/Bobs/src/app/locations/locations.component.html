@@ -1,3 +1,10 @@
-<p>
-  locations works!
-</p>
+<ng-container *ngIf="locations$ | async as locations">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <app-location *ngFor="let location of locations" [location]="location">
+        </app-location>
+      </div>
+    </div>
+  </div>
+</ng-container>

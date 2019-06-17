@@ -10,6 +10,10 @@ import { OrdersComponent } from './orders/orders.component';
 import { MenuComponent } from './orders/menu/menu.component';
 import { MenuItemComponent } from './orders/menu/menu-item/menu-item.component';
 import { OrderComponent } from './orders/order/order.component';
+import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
+import { environment } from '../environments/environment';
+import { LocationComponent } from './locations/location/location.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,14 @@ import { OrderComponent } from './orders/order/order.component';
     OrdersComponent,
     MenuComponent,
     MenuItemComponent,
-    OrderComponent
+    OrderComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    environment.production ? [] : AkitaNgDevtools.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

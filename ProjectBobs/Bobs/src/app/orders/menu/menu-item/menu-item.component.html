@@ -1,3 +1,9 @@
-<p>
-  menu-item works!
-</p>
+<div class="card">
+  <div class="mx-auto" [ngClass]="menuItem.icon" [attr.aria-label]="menuItem.name"></div>
+
+  <div class="card-body">
+    <h5 class="card-title text-center">{{menuItem.name}}</h5>
+    <p class="card-text">{{menuItem.price}}<br />{{menuItem.description}}</p>
+    <a href="#" class="btn fill-red-2 text-white">Order</a>
+  </div>
+</div>
