@@ -1,7 +1,10 @@
 ng config cli.packageManager yarn
 
-Make sure your app.module.ts doesn't already have akita things imported...
-If it does then remove the akita imports, the environment import and the akita devtools line from the module imports array
+> open src/app/app.module.ts
+  1) we will now use http requests, so we need to import the http client
+    import { HttpClientModule } from '@angular/common/http';
+  2) we need to add HttpClientModule to the module imports array
+  3) remove any existing akita or environment related lines
 
 and then...
 
