@@ -10,6 +10,7 @@ ng add @datorama/akita
   ? Set up Akita's router store? No
 
 ng g component orders
+ng g component orders/order
 ng g component orders/menu
 ng g component orders/menu/menu-item
 
