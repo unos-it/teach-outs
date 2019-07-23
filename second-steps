@@ -1,0 +1,56 @@
+ng config cli.packageManager yarn
+
+Make sure your app.module.ts doesn't already have akita things imported...
+If it does then remove the akita imports, the environment import and the akita devtools line from the module imports array
+
+and then...
+
+ng add @datorama/akita
+  ? Set up Akita's devtools? Yes
+  ? Set up Akita's router store? No
+
+ng g component orders
+ng g component orders/menu
+ng g component orders/menu/menu-item
+
+ng g component locations/location
+
+ng g feature menu-item --dirName=state/menu-item
+ng g feature locations --dirName=state/locations
+
+> copy the locations and menu-items json assets from https://github.com/unos-it/teach-outs/tree/step2/ProjectBobs/Bobs/src/assets
+
+> copy file from https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/state/api-response.ts
+
+> fill out the menu-item model (id, name, price)
+  should look like: https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/state/menu-items/menu-item.model.ts
+
+> fill out location models (id, name, address, phone)
+  should look like: https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/state/locations/location.model.ts
+
+> update services to request the proper .json assets
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/state/menu-items/menu-items.service.ts
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/state/locations/locations.service.ts
+
+> update location component to have an Input() Location and render it
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/locations/location/location.component.ts
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/locations/location/location.component.html
+
+> inject locations query into locations component and render locations using the location component (add location search feature?)
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/locations/locations.component.ts
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/locations/locations.component.html
+
+> update menu-item component to have an Input() MenuItem and render it
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/orders/menu/menu-item/menu-item.component.ts
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/orders/menu/menu-item/menu-item.component.html
+
+> inject menu-item query into menu component and render items using the menu-item component (add item search feature?)
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/orders/menu/menu.component.ts
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/orders/menu/menu.component.html
+
+> update orders component template to render menu items and order
+  https://github.com/unos-it/teach-outs/blob/step2/ProjectBobs/Bobs/src/app/orders/orders.component.html
+
+ng serve -o
+
+Hopefully you have a working app?
